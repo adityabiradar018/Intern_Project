@@ -44,7 +44,7 @@ const StoreContextProvider = (props) => {
                 let itemInfo = food_list.find((product) => product._id === itemId);
 
                 if (!itemInfo) {
-                    console.warn(Warning: No matching product found for itemId: ${itemId});
+                    console.warn(`Warning: No matching product found for itemId: ${itemId}`);
                     continue; // Skip undefined items
                 }
 
